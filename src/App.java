@@ -278,12 +278,10 @@ public class App extends Application{
             connexion.close();
             primaryStage.close();
         });
-
-        Label lb_information = new Label("fa255@gm.com (1) • az987@gm.com • (2) • mk@gm.com (3)");
         
         //root.getChildren().addAll(table,btn_ajouter_compte,btn_modifier_compte,btn_supprimer_compte,btn_reset_clipboard,btn_refresh_table,btn_fermer_app,lb_information);
         under_table.getChildren().addAll(btn_ajouter_compte,btn_modifier_compte,btn_supprimer_compte,btn_reset_clipboard,btn_refresh_table,btn_fermer_app);
-        root.getChildren().addAll(table,under_table,lb_information);
+        root.getChildren().addAll(table,under_table);
 
 
         primaryStage.getIcons().add(logo);

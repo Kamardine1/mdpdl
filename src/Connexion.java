@@ -78,7 +78,7 @@ public class Connexion {
                 if (generatedKeys.next()) { //Si true alors un ID a été généré , on peut le lire
                     int nouvelId = generatedKeys.getInt(1); // on lit la valeur de la premiere colonne (qui correspond à l'id créé par SQLITE)
                     
-                    // Optionnel mais recommandé : on met à jour l'objet Java avec ce nouvel ID
+                    // On met à jour l'objet Java avec ce nouvel ID
                     compte.setId(nouvelId); 
                     
                     System.out.println("Compte '" + compte.getSiteApp() + "' créé avec succès (ID BDD = " + nouvelId + ")");
